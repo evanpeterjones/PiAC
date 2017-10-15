@@ -31,8 +31,8 @@ GPIO.setmode(BCM)
 GPIO.setup(LED, OUTPUT)
 
 def run():
-    with open(IRFunction.txt) as f:
-        for i in range(0, 729):
+    with open(IRFile.txt) as f:
+        for i:
             code = f.read(i)
             if (code == 0):
                 GPIO.output(LED, False)
